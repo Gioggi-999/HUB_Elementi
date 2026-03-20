@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scan Redirect</title>
+</head>
+<body>
+  <h2>Reindirizzamento...</h2>
+
+  <script>
+    async function redirect() {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get("id");
+
+      const response = await fetch("pages.json");
+      const pages = await response.json();
+
+      if (pages[id]) {
+        window.location.href = pages[id];
+      } else {
+        document.body.innerHTML = "<h1>Codice non valido</h1>";
+      }
+    }
+
+    redirect();
+  </script>
+</body>
+</html>
