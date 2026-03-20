@@ -1,0 +1,14 @@
+{
+  "123": {
+    "name": "Homepage Google",
+    "url": "https://google.com"
+  },
+  "456": {
+    "name": "YouTube Video",
+    "url": "https://youtube.com"
+  },
+  "789": {
+    "name": "Wikipedia",
+    "url": "https://wikipedia.org"
+  }
+}
